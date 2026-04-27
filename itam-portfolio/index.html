@@ -1,0 +1,136 @@
+
+<html lang='es' class='scroll-smooth'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>ITAM SAMIR | Axon Architect</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://unpkg.com/lucide@latest'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js'></script>
+    <link rel='stylesheet' href='src/css/style.css'>
+</head>
+<body>
+    <div id='cursor'></div>
+    <nav class='fixed top-0 w-full z-[100] p-6'>
+        <div class='max-w-6xl mx-auto flex justify-between items-center glass rounded-full px-8 py-4 border border-white/5'>
+            <div class='text-2xl font-black italic tracking-tighter'>ITAM<span class='text-red-600'>_</span></div>
+            <div class='hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em]'>
+                <a href='#home' class='hover:text-red-500'>Inicio</a>
+                <a href='#about' class='hover:text-red-500'>Historia</a>
+                <a href='#arsenal' class='hover:text-red-500'>Arsenal</a>
+                <a href='#axon' class='hover:text-red-500 text-red-500'>Axon Core</a>
+                <a href='#services' class='hover:text-red-500'>Servicios</a>
+                <a href='#roadmap' class='hover:text-red-500'>Roadmap</a>
+            </div>
+            <a href='https://discord.com/users/nqthing_' target='_blank' class='bg-white text-black text-[10px] font-black px-6 py-2 rounded-full hover:bg-red-600 hover:text-white transition-all'>DISCORD</a>
+        </div>
+    </nav>
+
+    <section id='home' class='min-h-screen flex flex-col justify-center items-center px-6'>
+        <h1 class='text-[13vw] font-black tracking-tighter hero-title leading-none text-center'>ITAM<br><span class='text-red-600'>SAMIR</span></h1>
+        <div class='mt-10 flex flex-col items-center gap-4'>
+            <div class='flex gap-1 items-end h-8'>
+                <div class='bar' style='animation-delay: 0.1s'></div><div class='bar' style='animation-delay: 0.3s'></div><div class='bar' style='animation-delay: 0.2s'></div>
+            </div>
+            <p class='text-zinc-500 font-bold uppercase tracking-[0.5em] text-xs'>Arquitecto de Software & Sistemas Modulares</p>
+        </div>
+    </section>
+
+    <section id='about' class='section-spacer px-6'>
+        <div class='max-w-6xl mx-auto grid md:grid-cols-2 gap-20'>
+            <div class='reveal-left'>
+                <h2 class='text-6xl font-black italic mb-10'>LA<br><span class='text-red-600'>GÉNESIS</span></h2>
+                <p class='text-zinc-400 text-xl font-light leading-relaxed mb-6'>
+                    Basado en Managua, Nicaragua, mi camino comenzó en el 10mo grado de secundaria, no como un hobby, sino como una obsesión por la eficiencia.
+                </p>
+                <p class='text-zinc-400 text-xl font-light leading-relaxed'>
+                    Lo que otros ven como un juego, yo lo veo como un ecosistema para optimizar. Desde los 14 años, he bridgeado la brecha entre el frontend estético y el backend de alto impacto.
+                </p>
+            </div>
+            <div class='glass p-12 rounded-[3rem] reveal-right flex flex-col justify-center border-red-600/10'>
+                <div class='space-y-8'>
+                    <div><h4 class='text-red-600 font-black text-xs uppercase tracking-widest'>Ubicación</h4><p class='text-2xl font-bold italic'>Nicaragua Node Central</p></div>
+                    <div><h4 class='text-red-600 font-black text-xs uppercase tracking-widest'>Estatus</h4><p class='text-2xl font-bold italic'>Estudiante de 10mo Grado</p></div>
+                    <div><h4 class='text-red-600 font-black text-xs uppercase tracking-widest'>Especialidad</h4><p class='text-2xl font-bold italic'>Full-Stack Architecture</p></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='arsenal' class='section-spacer px-6 bg-zinc-900/20'>
+        <div class='max-w-6xl mx-auto'>
+            <h2 class='text-5xl font-black italic text-center mb-20'>ARSENAL <span class='text-red-600'>TÉCNICO</span></h2>
+            <div class='grid grid-cols-2 md:grid-cols-4 gap-8'>
+                <div class='glass p-10 rounded-[2.5rem] flex flex-col items-center gap-6 reveal-up'>
+                    <i data-lucide='layout-template' class='w-10 h-10 text-red-600'></i>
+                    <span class='font-black text-xs tracking-widest uppercase'>Tailwind CSS</span>
+                </div>
+                <div class='glass p-10 rounded-[2.5rem] flex flex-col items-center gap-6 reveal-up' style='transition-delay: 0.2s'>
+                    <i data-lucide='terminal' class='w-10 h-10 text-yellow-500'></i>
+                    <span class='font-black text-xs tracking-widest uppercase'>JavaScript</span>
+                </div>
+                <div class='glass p-10 rounded-[2.5rem] flex flex-col items-center gap-6 reveal-up' style='transition-delay: 0.4s'>
+                    <i data-lucide='server' class='w-10 h-10 text-green-500'></i>
+                    <span class='font-black text-xs tracking-widest uppercase'>Node.js</span>
+                </div>
+                <div class='glass p-10 rounded-[2.5rem] flex flex-col items-center gap-6 reveal-up' style='transition-delay: 0.6s'>
+                    <i data-lucide='database' class='w-10 h-10 text-blue-500'></i>
+                    <span class='font-black text-xs tracking-widest uppercase'>MongoDB</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='axon' class='section-spacer px-6'>
+        <div class='max-w-6xl mx-auto glass p-20 rounded-[4rem] relative overflow-hidden reveal-up border-red-600/30'>
+            <div class='grid md:grid-cols-2 gap-16 items-center relative z-10'>
+                <div class='space-y-8'>
+                    <h2 class='text-6xl font-black italic uppercase italic tracking-tighter'>AXON<br><span class='text-red-600'>SYSTEM</span></h2>
+                    <p class='text-zinc-400 text-lg leading-relaxed'>
+                        Sincronización en milisegundos para **Minecraft Bedrock**. Integración profunda con APIs y bases de datos NoSQL.
+                    </p>
+                    <div class='flex gap-4'>
+                        <div class='bg-white/5 px-6 py-2 rounded-full text-[10px] font-bold'>REALTIME_SCAN</div>
+                        <div class='bg-white/5 px-6 py-2 rounded-full text-[10px] font-bold'>MODULAR_CORE</div>
+                    </div>
+                </div>
+                <div class='bg-black p-8 rounded-3xl border border-white/5 code-font text-[10px] leading-relaxed'>
+                    <p class='text-red-500 mb-2'>// ANALYZING_AXON_PACKETS...</p>
+                    <p class='text-white'>const Axon = require('./src/core/system');</p>
+                    <p class='text-green-500 mt-4'>DONE: Sincronización Exitosa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='roadmap' class='section-spacer px-6'>
+        <div class='max-w-4xl mx-auto'>
+            <h2 class='text-4xl font-black italic mb-16 text-center uppercase'>Roadmap <span class='text-red-600'>2026</span></h2>
+            <div class='space-y-12'>
+                <div class='flex gap-10 reveal-left'>
+                    <div class='text-red-600 font-black text-2xl'>Q1</div>
+                    <div class='glass p-8 rounded-3xl flex-1'>
+                        <h3 class='font-bold mb-2 uppercase'>Lanzamiento Axon V4</h3>
+                        <p class='text-zinc-500 text-sm'>Reescritura total del núcleo en ES Modules para mayor velocidad.</p>
+                    </div>
+                </div>
+                <div class='flex gap-10 reveal-left' style='transition-delay: 0.2s'>
+                    <div class='text-zinc-700 font-black text-2xl'>Q2</div>
+                    <div class='glass p-8 rounded-3xl flex-1 border-white/5'>
+                        <h3 class='font-bold mb-2 uppercase text-zinc-400'>Integración IA</h3>
+                        <p class='text-zinc-600 text-sm'>Análisis predictivo de comportamiento de jugadores mediante redes neuronales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='py-40 text-center px-6 border-t border-white/5'>
+        <h2 class='text-[10vw] font-black italic opacity-20 mb-10'>ITAM SAMIR</h2>
+    </footer>
+
+    <script src='src/js/main.js'></script>
+</body>
+</html>
+

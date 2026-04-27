@@ -1,0 +1,8 @@
+
+:root { --accent: #ff0000; --bg: #000000; }
+body { background-color: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; cursor: none; }
+.glass { background: rgba(255, 255, 255, 0.02); backdrop-filter: blur(40px); border: 1px solid rgba(255, 255, 255, 0.05); }
+#cursor { width: 8px; height: 8px; background: var(--accent); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; }
+.hero-title { background: linear-gradient(to bottom, #fff 40%, #222 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.section-spacer { padding: 180px 0; }
+

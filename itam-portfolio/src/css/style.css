@@ -1,0 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@200;400;800&family=JetBrains+Mono&display=swap');
+:root { --accent: #ff0000; --bg: #000000; }
+body { background-color: var(--bg); color: white; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; cursor: none; }
+.glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.1); }
+#cursor { width: 12px; height: 12px; background: var(--accent); border-radius: 50%; position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999; mix-blend-mode: difference; }
+.hero-title { background: linear-gradient(to bottom, #fff 40%, #333 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.section-spacer { padding: 150px 0; }
+.bar { width: 6px; background: var(--accent); border-radius: 2px; animation: grow 1s infinite ease-in-out; }
+@keyframes grow { 0%, 100% { height: 10px; } 50% { height: 40px; } }
+

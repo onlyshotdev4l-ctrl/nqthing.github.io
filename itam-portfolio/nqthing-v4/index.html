@@ -1,0 +1,102 @@
+
+<html lang='es' class='scroll-smooth'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>nqthing_ | Axon Archive</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://unpkg.com/lucide@latest'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js'></script>
+    <link rel='stylesheet' href='src/css/style.css'>
+</head>
+<body>
+    <div id='cursor'></div>
+    <nav class='fixed top-0 w-full z-[100] p-6'>
+        <div class='max-w-6xl mx-auto flex justify-between items-center glass rounded-full px-8 py-4 border border-white/5'>
+            <div class='text-2xl font-black italic tracking-tighter'>nqthing<span class='text-red-600'>_</span></div>
+            <div class='hidden md:flex gap-8 text-[10px] font-bold uppercase tracking-[0.3em]'>
+                <a href='#home' class='hover:text-red-500'>Root</a>
+                <a href='#manifesto' class='hover:text-red-500'>Manifesto</a>
+                <a href='#tech' class='hover:text-red-500'>Tech</a>
+                <a href='#axon' class='hover:text-red-500 text-red-500 font-black'>Axon Archive</a>
+                <a href='#projects' class='hover:text-red-500'>Vault</a>
+            </div>
+            <a href='https://discord.com/users/nqthing_' target='_blank' class='bg-red-600 text-white text-[10px] font-black px-6 py-2 rounded-full hover:bg-white hover:text-black transition-all'>ESTABLISH_CONTACT</a>
+        </div>
+    </nav>
+
+    <section id='home' class='min-h-screen flex flex-col justify-center items-center px-6'>
+        <div class='absolute inset-0 overflow-hidden -z-10 opacity-20'>
+            <div class='absolute top-0 left-0 w-full h-full bg-[radial-gradient(#ff0000_1px,transparent_1px)] [background-size:40px_40px]'></div>
+        </div>
+        <h1 class='text-[15vw] font-black tracking-tighter hero-title leading-none text-center'>NQTHING<span class='text-red-600'>_</span></h1>
+        <div class='mt-10 flex flex-col items-center gap-4'>
+            <p class='text-zinc-600 font-mono tracking-[0.8em] text-[10px] uppercase animate-pulse'>// Identity: Redacted // Status: Ghost</p>
+        </div>
+    </section>
+
+    <section id='manifesto' class='section-spacer px-6'>
+        <div class='max-w-4xl mx-auto text-center'>
+            <h2 class='text-5xl font-black italic mb-12 uppercase'>Manifesto</h2>
+            <p class='text-zinc-500 text-2xl font-light leading-relaxed italic'>
+                "El código es mi único rastro. No hay rostro, no hay nombre, solo infraestructura pura diseñada para dominar el intercambio de datos en la red."
+            </p>
+        </div>
+    </section>
+
+    <section id='tech' class='section-spacer px-6 bg-zinc-900/10'>
+        <div class='max-w-6xl mx-auto'>
+            <h2 class='text-3xl font-black italic mb-20 uppercase tracking-widest text-center'>Kernel <span class='text-red-600'>Knowledge</span></h2>
+            <div class='grid grid-cols-2 md:grid-cols-4 gap-6'>
+                <div class='glass p-12 rounded-[2rem] border-white/5 flex flex-col items-center gap-4 reveal-up'>
+                    <i data-lucide='cpu' class='text-red-600 w-8 h-8'></i>
+                    <p class='font-mono text-[10px] font-bold'>BACKEND_ENG</p>
+                </div>
+                <div class='glass p-12 rounded-[2rem] border-white/5 flex flex-col items-center gap-4 reveal-up' style='transition-delay: 0.1s'>
+                    <i data-lucide='shield-check' class='text-red-600 w-8 h-8'></i>
+                    <p class='font-mono text-[10px] font-bold'>SECURE_AUTH</p>
+                </div>
+                <div class='glass p-12 rounded-[2rem] border-white/5 flex flex-col items-center gap-4 reveal-up' style='transition-delay: 0.2s'>
+                    <i data-lucide='database' class='text-red-600 w-8 h-8'></i>
+                    <p class='font-mono text-[10px] font-bold'>NOSQL_MODS</p>
+                </div>
+                <div class='glass p-12 rounded-[2rem] border-white/5 flex flex-col items-center gap-4 reveal-up' style='transition-delay: 0.3s'>
+                    <i data-lucide='layers' class='text-red-600 w-8 h-8'></i>
+                    <p class='font-mono text-[10px] font-bold'>UI_OPTIMIZER</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='axon' class='section-spacer px-6'>
+        <div class='max-w-6xl mx-auto glass p-20 rounded-[4rem] relative overflow-hidden reveal-up'>
+            <div class='grid md:grid-cols-2 gap-16 items-center'>
+                <div class='space-y-8'>
+                    <h2 class='text-6xl font-black italic uppercase tracking-tighter'>AXON<br><span class='text-red-600'>ARCHIVE</span></h2>
+                    <p class='text-zinc-500 text-lg leading-relaxed font-mono text-sm'>
+                        > Accediendo a archivos del sistema... <br>
+                        > Módulo: Rastreador de Servidores MCPE <br>
+                        > Propósito: Captura de paquetes y sincronización de identidades en tiempo real.
+                    </p>
+                    <button class='bg-red-600 text-white px-8 py-3 rounded-full text-[10px] font-black uppercase tracking-widest'>DECRYPT_DOCS</button>
+                </div>
+                <div class='bg-black/50 p-10 rounded-3xl border border-red-600/20 code-font text-[10px] leading-relaxed shadow-2xl'>
+                    <p class='text-red-600 animate-pulse'>[ENCRYPTED_DATA_STREAM]</p>
+                    <p class='text-zinc-700 mt-4 italic'>// No se detectaron credenciales de usuario</p>
+                    <p class='text-zinc-700 italic'>// Origen: Unknown_Node</p>
+                    <p class='text-white mt-4'>system.init_scout({ <br> &nbsp;&nbsp;auth: "anonymous", <br> &nbsp;&nbsp;stealth: true <br> });</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class='py-40 text-center px-6'>
+        <h2 class='text-[10vw] font-black italic opacity-5 mb-10'>DELETED_ID</h2>
+        <p class='text-zinc-800 font-mono text-[9px] uppercase tracking-[1em]'>nqthing_ • 2026 • End of Line</p>
+    </footer>
+
+    <script src='src/js/main.js'></script>
+</body>
+</html>
+

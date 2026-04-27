@@ -1,0 +1,137 @@
+
+<html lang='es' class='scroll-smooth'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>nqthing_ | Ghost Architecture</title>
+    <script src='https://cdn.tailwindcss.com'></script>
+    <script src='https://unpkg.com/lucide@latest'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js'></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;800&family=Inter:wght@900&display=swap');
+        :root { --red: #ff0000; --bg: #000000; --card: rgba(255, 255, 255, 0.02); }
+        body { background: var(--bg); color: #fff; font-family: 'JetBrains Mono', monospace; overflow-x: hidden; cursor: none; }
+        .font-huge { font-family: 'Inter', sans-serif; letter-spacing: -0.05em; }
+        .glass { background: var(--card); backdrop-filter: blur(20px); border: 1px solid rgba(255, 255, 255, 0.05); transition: 0.4s cubic-bezier(0.23, 1, 0.32, 1); }
+        .glass:hover { border-color: var(--red); background: rgba(255, 0, 0, 0.01); transform: translateY(-5px); }
+        #cursor { width: 8px; height: 8px; background: var(--red); border-radius: 50%; position: fixed; pointer-events: none; z-index: 9999; }
+        .line-clamp { border-left: 2px solid var(--red); padding-left: 20px; }
+        .scanline { width: 100%; height: 100px; background: linear-gradient(to bottom, transparent, rgba(255,0,0,0.05), transparent); position: absolute; top: -100px; animation: scan 4s linear infinite; pointer-events: none; }
+        @keyframes scan { 0% { top: -100px; } 100% { top: 100%; } }
+    </style>
+</head>
+<body>
+    <div id='cursor'></div>
+    <div class='scanline'></div>
+
+    <nav class='fixed top-0 w-full z-[100] p-8'>
+        <div class='max-w-7xl mx-auto flex justify-between items-center glass rounded-2xl px-8 py-4'>
+            <div class='flex items-center gap-4'>
+                <div class='w-8 h-8 bg-red-600 rounded flex items-center justify-center font-black text-xs'>N_</div>
+                <span class='font-huge text-2xl'>nqthing_</span>
+            </div>
+            <div class='hidden md:flex gap-10 text-[10px] font-bold tracking-[0.4em] uppercase opacity-50'>
+                <a href='#home' class='hover:text-red-600 hover:opacity-100 transition-all'>01_ROOT</a>
+                <a href='#arsenal' class='hover:text-red-600 hover:opacity-100 transition-all'>02_TECH</a>
+                <a href='#axon' class='hover:text-red-600 hover:opacity-100 transition-all'>03_CORE</a>
+                <a href='#contact' class='hover:text-red-600 hover:opacity-100 transition-all'>04_VOID</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id='home' class='min-h-screen flex flex-col justify-center items-center text-center px-6 relative'>
+        <div class='opacity-10 font-huge text-[25vw] absolute select-none pointer-events-none'>GHOST</div>
+        <h1 class='font-huge text-[12vw] leading-none z-10 reveal-up'>NQTHING<span class='text-red-600 animate-pulse'>_</span></h1>
+        <p class='text-zinc-500 tracking-[1.2em] text-[10px] uppercase mt-4 reveal-up'>Invisible Systems // Eternal Code</p>
+    </section>
+
+    <section id='manifesto' class='py-32 px-6'>
+        <div class='max-w-5xl mx-auto'>
+            <div class='line-clamp reveal-left'>
+                <h2 class='text-red-600 text-xs font-bold mb-8 tracking-widest'>[ MANIFESTO_PROTOCOL ]</h2>
+                <p class='text-3xl md:text-6xl font-huge italic leading-[1.1] opacity-80'>
+                    La arquitectura real no se ve. Se siente en la latencia cero, en la persistencia de los datos y en el silencio del backend.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id='arsenal' class='py-32 px-6 bg-zinc-950/50'>
+        <div class='max-w-7xl mx-auto'>
+            <h2 class='font-huge text-4xl mb-16 text-center italic uppercase'>Arsenal_<span class='text-red-600'>Tech</span></h2>
+            <div class='grid grid-cols-1 md:grid-cols-4 gap-4'>
+                <div class='md:col-span-2 glass p-12 rounded-3xl reveal-up'>
+                    <i data-lucide='server' class='text-red-600 mb-6 w-10 h-10'></i>
+                    <h3 class='text-2xl font-bold mb-4 uppercase'>Node.js Architect</h3>
+                    <p class='text-zinc-500 text-sm'>Desarrollo de microservicios modulares y automatización de procesos críticos en tiempo real.</p>
+                </div>
+                <div class='glass p-12 rounded-3xl reveal-up' style='transition-delay: 0.1s'>
+                    <i data-lucide='database' class='text-zinc-600 mb-6 w-10 h-10'></i>
+                    <h3 class='text-lg font-bold mb-4 uppercase'>MongoDB</h3>
+                    <p class='text-zinc-600 text-xs'>Gestión de grandes volúmenes de datos con esquemas NoSQL eficientes.</p>
+                </div>
+                <div class='glass p-12 rounded-3xl reveal-up' style='transition-delay: 0.2s'>
+                    <i data-lucide='terminal' class='text-zinc-600 mb-6 w-10 h-10'></i>
+                    <h3 class='text-lg font-bold mb-4 uppercase'>Core JS</h3>
+                    <p class='text-zinc-600 text-xs'>Lógica pura en JavaScript ES6+ para sistemas de alto rendimiento.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id='axon' class='py-32 px-6'>
+        <div class='max-w-7xl mx-auto glass rounded-[4rem] p-16 md:p-24 relative overflow-hidden reveal-up'>
+            <div class='grid md:grid-cols-2 gap-20 items-center relative z-10'>
+                <div class='space-y-8'>
+                    <h2 class='font-huge text-6xl italic leading-none'>AXON<br><span class='text-red-600'>ARCHIVE</span></h2>
+                    <p class='text-zinc-400 leading-relaxed font-light'>
+                        Un ecosistema diseñado para la captura y sincronización de datos en servidores gaming. Escalabilidad total sin comprometer la seguridad del nodo principal.
+                    </p>
+                    <div class='flex gap-6'>
+                        <div class='text-red-600 font-bold text-xs'>[ ACTIVE ]</div>
+                        <div class='text-zinc-700 font-bold text-xs'>[ VERSION 4.4.0 ]</div>
+                    </div>
+                </div>
+                <div class='bg-black p-10 rounded-2xl border border-white/5 font-mono text-[10px] space-y-2 opacity-80'>
+                    <p class='text-red-600 animate-pulse'>> INITIALIZING_SCAN...</p>
+                    <p class='text-zinc-500'>[2026-04-26] Packet capture active.</p>
+                    <p class='text-zinc-500'>[SYSTEM] Monitoring 1,240 nodes.</p>
+                    <p class='text-green-500 mt-4'>> SYNC_COMPLETE_WITH_MONGODB_ATLAS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id='contact' class='py-40 text-center'>
+        <h2 class='font-huge text-[10vw] opacity-10 mb-10 italic'>NQTHING_</h2>
+        <div class='flex justify-center gap-12'>
+            <a href='#' class='text-[10px] font-bold tracking-widest hover:text-red-600 transition-colors'>DISCORD</a>
+            <a href='#' class='text-[10px] font-bold tracking-widest hover:text-red-600 transition-colors'>GITHUB</a>
+            <a href='#' class='text-[10px] font-bold tracking-widest hover:text-red-600 transition-colors'>GHOST_PROTO</a>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        gsap.registerPlugin(ScrollTrigger);
+
+        const cursor = document.getElementById('cursor');
+        window.addEventListener('mousemove', (e) => {
+            gsap.to(cursor, { x: e.clientX - 4, y: e.clientY - 4, duration: 0.15 });
+        });
+
+        gsap.utils.toArray('.reveal-up').forEach(el => {
+            gsap.from(el, { scrollTrigger: { trigger: el, start: 'top 90%' }, y: 60, opacity: 0, duration: 1, ease: 'power4.out' });
+        });
+
+        gsap.from('.reveal-left', { scrollTrigger: { trigger: '.reveal-left', start: 'top 80%' }, x: -100, opacity: 0, duration: 1.5 });
+
+        document.querySelectorAll('a, .glass').forEach(el => {
+            el.addEventListener('mouseenter', () => gsap.to(cursor, { scale: 5, background: 'transparent', border: '1px solid #ff0000' }));
+            el.addEventListener('mouseleave', () => gsap.to(cursor, { scale: 1, background: '#ff0000', border: 'none' }));
+        });
+    </script>
+</body>
+</html>
+
